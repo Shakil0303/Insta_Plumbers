@@ -1,0 +1,1 @@
+export { LocationsCoverage } from "./LocationsCoverage";

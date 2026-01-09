@@ -1,0 +1,129 @@
+import { Container } from "@/components/ui/Container";
+import { Button } from "@/components/ui/Button";
+import Image from "next/image";
+
+export function WhyChooseUs() {
+  return (
+    <section className="w-full">
+      <div className="lg:hidden">
+
+        <div className="bg-white py-8">
+          <Container className="px-4 text-center">
+            <h2 className="text-3xl font-bold text-dark-900">
+              Why Choose <br /> InstaPlumbers?
+            </h2>
+          </Container>
+        </div>
+
+        <div className="bg-primary py-8">
+          <Container className="px-4">
+            <div className="flex justify-around items-start mb-8">
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Image
+                    src="/images/Experience.svg"
+                    alt="Experience"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <p className="text-white text-sm font-medium text-center leading-tight">
+                  Min. 5 Years <br /> Experience
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Image
+                    src="/images/Verified.svg"
+                    alt="Verified"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <p className="text-white text-sm font-medium text-center leading-tight">
+                  Vetted & <br /> Verified
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3">
+                <div className="w-16 h-16 flex items-center justify-center">
+                  <Image
+                    src="/images/Fullyinsured.svg"
+                    alt="Insured"
+                    width={48}
+                    height={48}
+                  />
+                </div>
+                <p className="text-white text-sm font-medium text-center leading-tight">
+                  Fully <br /> Insured
+                </p>
+              </div>
+            </div>
+
+            <div className="flex justify-center">
+              <Button className="bg-white text-primary hover:bg-gray-100">
+                Learn More
+              </Button>
+            </div>
+          </Container>
+        </div>
+      </div>
+
+      <div className="hidden lg:grid grid-cols-3 min-h-[260px]">
+        <div className="bg-dark-900 flex items-center">
+          <Container className="py-12 text-left">
+            <h2 className="text-4xl font-bold mb-6 text-white">
+              Why Choose <br /> InstaPlumbers?
+            </h2>
+            <Button variant="primary" className="sm:variant-outline">
+              Learn More
+            </Button>
+          </Container>
+        </div>
+
+        <div className="bg-primary col-span-2 flex flex-col items-start py-12">
+          <Container className="px-4">
+            <div className="grid grid-cols-3 gap-8 md:gap-40 text-white">
+              <div className="flex flex-col items-center gap-3">
+                <Image
+                  src="/images/Experience.svg"
+                  alt="Experience"
+                  width={48}
+                  height={48}
+                />
+                <p className="text-lg font-medium text-center">
+                  Min. 5 Years <br /> Experience
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3">
+                <Image
+                  src="/images/Verified.svg"
+                  alt="Verified"
+                  width={48}
+                  height={48}
+                />
+                <p className="text-lg font-medium text-center">
+                  Vetted & <br /> Verified
+                </p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3">
+                <Image
+                  src="/images/Fullyinsured.svg"
+                  alt="Insured"
+                  width={48}
+                  height={48}
+                />
+                <p className="text-lg font-medium text-center">
+                  Fully <br /> Insured
+                </p>
+              </div>
+            </div>
+          </Container>
+        </div>
+      </div>
+    </section>
+  );
+}
